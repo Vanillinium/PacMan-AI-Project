@@ -389,7 +389,7 @@ def cornersHeuristic(state: Any, problem: CornersProblem):
         dist = abs(current_pos[0] - corner[0]) + abs(current_pos[1] - corner[1])
         if dist > max_distance:
             max_distance = dist
-    return max_distance # Default to trivial solution
+    return max_distance
 
 class AStarCornersAgent(SearchAgent):
     "A SearchAgent for FoodSearchProblem using A* and your foodHeuristic"

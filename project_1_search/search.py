@@ -101,7 +101,6 @@ def depthFirstSearch(problem: SearchProblem):
             for successor, action, stepCost in problem.getSuccessors(current_state):
                 dfs.push((successor, actions + [action]))
     return []
-    util.raiseNotDefined()
 
 def breadthFirstSearch(problem: SearchProblem):
     """Search the shallowest nodes in the search tree first."""
@@ -122,7 +121,6 @@ def breadthFirstSearch(problem: SearchProblem):
                 visited.add(successor)
                 bfs.push((successor, actions + [action]))
     return []
-    util.raiseNotDefined()
 
 def uniformCostSearch(problem: SearchProblem):
     """Search the node of least total cost first."""
